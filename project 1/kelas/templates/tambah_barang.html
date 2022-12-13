@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="form">
+    <dif class="container">
+           <dif class="row">
+                <dif class="col-md-15">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button type="submit" class="btn btn=primary">Tambah</button>
+                    </form>
+                 </dif>
+            </dif>
+    </dif>
+   
+                    
+</section>
+{% endblock %}
